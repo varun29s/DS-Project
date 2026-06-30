@@ -2,7 +2,6 @@ from fastapi import APIRouter, Depends, HTTPException, UploadFile, status
 from sqlalchemy.orm import Session
 
 from app.api import deps
-from app.api.deps import get_current_user  # noqa: F401 (re-exported for Depends)
 from app.crud import post as crud_post
 from app.crud import social as crud_social
 from app.crud import user as crud_user

@@ -6,5 +6,5 @@ from app.db.base_class import Base  # noqa: F401
 from app.models.user import User  # noqa: F401
 from app.models.post import Post  # noqa: F401
 from app.models.story import Story  # noqa: F401
-from app.models.reel import Reel  # noqa: F401
+from app.models.reels import Reel  # noqa: F401
 from app.models.social import Follow, Like, Comment, ReelLike, ReelView  # noqa: F401

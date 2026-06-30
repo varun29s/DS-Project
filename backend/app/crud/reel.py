@@ -3,7 +3,7 @@ from collections.abc import Iterable
 from sqlalchemy import delete, func, select
 from sqlalchemy.orm import Session
 
-from app.models.reel import Reel
+from app.models.reels import Reel
 from app.models.social import ReelLike, ReelView
 
 
@@ -127,4 +127,4 @@ def attach_counts(db: Session, reels: Iterable[Reel], user_id: int) -> list[Reel
         r.liked = r.id in liked
         if not hasattr(r, "reason"):
             r.reason = None
-    return reels
+    return reels    
